@@ -1,0 +1,23 @@
+//Python//
+class Complex:
+    def __init__(self, realpart, imagpart):
+         self.r = realpart
+         self.i = imagpart
+
+x = Complex(3.0, -4.5)
+
+//Java//
+class Complex{
+	double real;
+	double imag;
+	Complex(double new_realpart, double new_imagpart){
+		real = new_realpart;
+		imag = new_imagpart;
+	}
+}
+
+public class Comp{ 
+    public void main(String args[]){
+	Complex c_num = new Complex(3.0, -4.5);
+    }
+}

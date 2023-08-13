@@ -1,0 +1,7 @@
+//Java//
+String [] names = {"Ben", "John", "Charles"};
+names[3] = "Bill"; //exception
+
+//Python//
+names = ["Ben", "John", "Charles"]
+names.append("Bill")

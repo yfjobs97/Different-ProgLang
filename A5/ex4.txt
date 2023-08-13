@@ -1,0 +1,12 @@
+//Java//
+public class Scope { 
+    public void main(String args[]){
+    	for(int i = 0; i < 10; i++){
+		System.out.println(i);
+	}
+    }
+}
+
+//Python//
+for i in range(0, 10, 1):
+  print(i)

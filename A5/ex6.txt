@@ -1,0 +1,33 @@
+//Java//
+public class Scope { 
+    public void main(String args[]){
+	int a = 10, b = 5;
+	sub(a,b)
+	System.out.println(a);
+	System.out.println(b);
+    }
+}
+
+public int sub(int a, int b){
+    int temp = a;
+    a = b;
+    b = temp;
+}
+public int sub(double a){
+    int temp = a;
+    a = 21;
+}
+
+//Python//
+def sub(a, b=None):
+	if b is not None:
+		temp = a
+    		a = b
+    		b = temp
+	else:
+		temp = a
+    		a = 21
+
+a = 10
+b = 5
+sub()

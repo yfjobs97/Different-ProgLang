@@ -1,0 +1,21 @@
+//Java//
+public class Scope { 
+    public void main(String args[]){
+        String name = "EXP";
+        if (name.equals("EXP")) {
+            System.out.println("Found EXP!");
+        }
+	else {
+	    System.out.println("Nothing Found!");
+	}
+    }
+}
+
+//Python//
+name = "EXP"
+if name == "EXP":
+    EXP_found = True
+if EXP_found:
+    print ("I found EXP!")
+else:
+    print ("Nothing Found!")

@@ -1,0 +1,9 @@
+
+
+//Java//
+System.out.println("first string" + "second string");
+
+//Python//
+def __add__ (self, second):
+return Complex(self.real + second.real, self.imag + second.imag)
+
