@@ -1,0 +1,57 @@
+def f():  
+    s = "s in f"
+    print s  
+s = "s outside" 
+f() 
+print s 
+----------------------
+def function1(): 
+    print ("f1")
+    def function2(): 
+        print ("f2")
+    function2()
+
+function1()
+----------------------
+def function1(): 
+    print ("f1")
+    def function2(Var:int): 
+        print (Var)
+    function2(10.57)
+
+function1()
+
+----------------------
+def function1(): 
+    def function2(Var:int): 
+        print (Var)
+    def function3(func):
+        x = 4
+        func(4)
+    function3(function2)
+
+function1()
+-----------------
+def sum(a, b): 
+    r = a + b 
+    print(r) 
+
+def sum(a, b, c): 
+    r = a + b + c 
+    print(r)
+#sum(3,2) #error
+sum(4,5,6)
+
+------
+def Bigsub(string): 
+    string = string 
+  
+    def sub1(): 
+        print(string) 
+  
+    return sub1  
+  
+
+func = Bigsub('AEIOU') 
+func()
+
