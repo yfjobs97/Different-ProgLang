@@ -1,0 +1,3 @@
+madridAirport([MadridTax,MadridDelay]);
+flight(toronto,madrid);
+madridTorontoRoute([Airline1,TotalPriceOfAirline1,TotalDurationOfAirline1],[Airline2,TotalPriceOfAirline2,TotalDurationOfAirline2],[Airline3,TotalPriceOfAirline3,TotalDurationOfAirline3]).

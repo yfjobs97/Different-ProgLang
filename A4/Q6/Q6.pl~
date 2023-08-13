@@ -1,0 +1,25 @@
+population(dallas,2600000).
+population(denton,850000).
+population(collin,1000000).
+population(tarrant,2000000).
+income(dallas,60000).
+income(denton,65000).
+income(collin,90000).
+income(tarrant,62000).
+
+neighbor(dallas,tarrant).
+neighbor(dallas,denton).
+neighbor(dallas,collin).
+
+popList([[dallas,2600000],[denton,850000],[collin,1000000],[tarrant, 2000000]]).
+
+
+smallPop(A,B):- population(A,X), population(B,Y), (X<Y).
+smallPopHighin(A,B):- population(A,X),population(B,Y),(X<Y),income(A,W),income(B,Z),(W>Z).
+smallPopLowin(A,B):- population(A,X),population(B,Y),(X<Y),income(A,W),income(B,Z),(W<Z).
+largestPop(Q):- popList(L), my_max(L,A), population(Q,A).
+
+my_max([], R, R). %end
+my_max([[_,X]|Xs], WK, R):- X >  WK, my_max(Xs, X, R). %WK is Carry about
+my_max([[_,X]|Xs], WK, R):- X =< WK, my_max(Xs, WK, R).
+my_max([[_,X]|Xs], R):- my_max(Xs, X, R). %start

@@ -1,0 +1,11 @@
+flight(toronto,madrid).
+flight(madrid,barcelona).
+flight(barcelona,valencia).
+flight(madrid,valencia).
+flight(paris,toulouse).
+
+madridTorontoRoute([iberia,925,585],[united,1075,645],[airCanada,1025,585]).
+
+madridAirport(75,45).
+
+

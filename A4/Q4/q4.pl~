@@ -1,0 +1,15 @@
+delements(A,Q):-list_length(A,N), remain(A,4,N-1,Q).
+list_length([],0).
+list_length([_|Tail],Len):- list_length(Tail,Len1),Len is Len1 + 1.
+remain([X|_],1,1,[X]).
+remain([X|Xr],1,K,[X|Yr]) :- K > 1,
+   K1 is K - 1, remain(Xr,1,K1,Yr).
+remain([_|Xr],I,K,Yr) :- I > 1,
+   I1 is I - 1, K1 is K - 1, remain(Xr,I1,K1,Yr).
+%%  first find the list length for index of the last element
+ % to delete the first 3 elements and the last element, the 4th element
+  %to the second to the last element are kept.
+  %using I to track the current item to delete(starting index at 1)
+  %using K to track the current item to delete(relative to starting
+  %point of 1)
+  %delete items from the beginning first, then delete items to the end

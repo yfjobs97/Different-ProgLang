@@ -1,0 +1,11 @@
+reverseandappendlist(L,B):- rev(L,R), append(L,R,B).
+append([],List,List).
+append([Head | List_1], List_2, [Head | List_3]):-
+    append(List_1, List_2, List_3).
+rev(L,Result):-  reverse(L,[],Result).
+reverse([Head|Tail],Accu,Result):-  reverse(Tail,[Head|Accu],Result).
+   reverse([],Accu,Accu).
+
+ % reverse the list first, then append the reversed list to the back of
+ % the list
+

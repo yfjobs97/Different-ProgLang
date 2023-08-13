@@ -1,0 +1,28 @@
+color(red).
+color(green).
+color(blue).
+
+adjacent(State1Color, State2Color) :-
+    color(State1Color), color(State2Color),
+    State1Color \= State2Color.
+
+region(A,B,C,D,E,F,G,H,I,J,K,L,M,N):- adjacent(A,B),adjacent(A,F),adjacent(A,E),adjacent(B,F),adjacent(B,G),adjacent(B,C),adjacent(C,G),adjacent(C,I),adjacent(C,D),adjacent(D,I),adjacent(D,H),adjacent(D,J),adjacent(E,F),adjacent(E,L),adjacent(E,K),adjacent(F,G),adjacent(F,M),adjacent(F,L),adjacent(G,I),adjacent(G,H),adjacent(G,M),adjacent(H,M),adjacent(H,I),adjacent(H,D),adjacent(H,J),adjacent(K,L),adjacent(L,M),adjacent(M,N).
+
+/**
+Region abbreviations:
+A:Wise
+B:Denton
+C:Collin
+D:Hunt
+E:Parker
+F:Tarrant
+G:Dallas
+H:Kaufman
+I:Rockwall
+J:Van Zandt
+K:Hood
+L:Johnson
+M:Ellis
+N:Navarro
+
+*/

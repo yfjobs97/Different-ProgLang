@@ -1,0 +1,5 @@
+neighbor(dallas,A);
+smallPop(B,dallas);
+smallPopHighin(C,dallas);
+smallPopLowin(D,dallas);
+largestPop(Q).

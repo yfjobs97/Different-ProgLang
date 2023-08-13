@@ -1,0 +1,13 @@
+mother(ivankaTrump,Mum);
+stepMother(ivankaTrump,StepMum);
+father(ivankaTrump,Dad);
+spouse(donaldTrump,Spouse);
+exSpouse(donaldTrump,ExSpouse);
+sister(ivankaTrump,Sis);
+halfSister(barronTrump,HalfSis);
+brother(ivankaTrump,Bro);
+halfBrother(ivankaTrump,HalfBro);
+grandfather(ivankaTrump,GFather);
+grandmother(ivankaTrump,GMother);
+greatGrandfather(theodoreJames,GGFather).
+

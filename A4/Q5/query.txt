@@ -1,0 +1,2 @@
+regionColor(Wise,Denton,Collin,Hunt,Parker,Tarrant,Dallas,Kaufman,Rockwall,VanZandt,Hood,Johnson,Ellis,Navarro);
+aggregate_all(count,regionColor(Wise,Denton,Collin,Hunt,Parker,Tarrant,Dallas,Kaufman,Rockwall,VanZandt,Hood,Johnson,Ellis,Navarro),Count).
