@@ -1,6 +1,6 @@
 # CE4337
-Tasks in different Programming Languages.<br>
+Assignments done in different Programming Languages.<br>
 <strong> A3:</strong> C++ and Python <br>
-A4: Perl <br>
-A5: Comparison between Java and Python <br>
-A6:
+<strong> A4:</strong> Perl <br>
+<strong> A5:</strong> Comparison between Java and Python <br>
+<strong> A6:</strong>
